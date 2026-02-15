@@ -1,6 +1,3 @@
-#include <iostream>
+#include <print>
 
-int main() {
-    std::cout << "WHAZAAAAAP" << std::endl;
-    return 0;
-}
+auto main() -> int32_t { std::println("WHAZAAAAAP"); }
