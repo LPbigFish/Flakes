@@ -1,6 +1,6 @@
 # My Flakes
 
-Here I store some of my flake templates, enjoy if you want to use them (:
+Here I store some of my flake templates. Enjoy if you want to use them. (:
 
 ## Usage:
 
