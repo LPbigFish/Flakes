@@ -18,6 +18,7 @@ set(CMAKE_CXX_FLAGS
     "-fsanitize=address -fsanitize=undefined -fstack-protector-strong -Wno-unused-result -Wall -Wextra -Werror=uninitialized -Werror=vla -Werror=return-type -Wshadow -Wnull-dereference -Wformat -Wformat-security -Wstrict-overflow -Wstrict-prototypes -Wcast-align -Wredundant-decls -Wpedantic -Werror -Wno-shadow"
 )
 
-add_executable(my_executable_name src/main.cpp) # <-- CHANGE THIS TOO
+file(GLOB SOURCES src/*.cpp)
+add_executable(my_executable_name ${SOURCES}) # <-- CHANGE THIS TOO
 
 target_compile_options(my_executable_name PRIVATE -Wall -Wextra -Wpedantic)
