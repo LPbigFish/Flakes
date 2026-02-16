@@ -20,7 +20,10 @@
           };
           python = python3.withPackages(p: with p; [
             ipykernel
-            pandas
+            pip
+            notebook
+            ipywidgets
+            matplotlib-inline
           ]);
         in {
         devShells.default = pkgs.mkShell {
